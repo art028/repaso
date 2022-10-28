@@ -26,6 +26,8 @@ class controlador extends Controller
             'apunte' => 'required' 
         ]);
         return redirect('1')->with('success','Apunte Guardado');
+
+        
     }
     
 
