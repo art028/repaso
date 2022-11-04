@@ -22,7 +22,7 @@ class controlador extends Controller
     public function guarda(Request $req){
         
         $req->validate([
-            'nombre' => 'required',
+            'nombre' => 'required min:4',
             'apunte' => 'required' 
         ]);
         return redirect('1')->with('success','Apunte Guardado');
